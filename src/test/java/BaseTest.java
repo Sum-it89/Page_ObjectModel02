@@ -10,7 +10,7 @@ public class BaseTest extends BrowserManager
 
     }
 
-   // @AfterMethod
+   @AfterMethod
     public void tearDown(ITestResult result)
     {
 
