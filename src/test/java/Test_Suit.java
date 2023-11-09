@@ -85,13 +85,13 @@ public class Test_Suit extends BaseTest
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
 
-        changeCurrencySign.clickOnCurrencySelector();
-        changeCurrencySign.selectsCurrencyToEuro();
-        changeCurrencySign.checkThePriceCurrencySign();
+        changeCurrencySign.clickOnCurrencySelector();//selects the currency.
+        changeCurrencySign.selectsCurrencyToEuro();//selects the currency to Euro
+        changeCurrencySign.checkThePriceCurrencySign();//Checks if the currency sign is changed.
 
-        changeCurrencySign.clickOnCurrencySelector();
-        changeCurrencySign.selectCurrencyToDollar();
-        changeCurrencySign.checkThePriceCurrencySign();
+        changeCurrencySign.clickOnCurrencySelector();//selects the currency.
+        changeCurrencySign.selectCurrencyToDollar();//selects the currency to US Dollar.
+        changeCurrencySign.checkThePriceCurrencySign();//Checks if the currency sign is changed.
     }
 
     @Test (priority = 5)
@@ -100,8 +100,8 @@ public class Test_Suit extends BaseTest
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
 
-        alertPopUps.clickSearchAndAcceptAlert();
-        alertPopUps.clickVoteAndAcceptAlert();
+        alertPopUps.clickSearchAndAcceptAlert();//accepts the popup when clicked searched without entering text.
+        alertPopUps.clickVoteAndAcceptAlert();//accepts the popup when clicked on vote button without selecting.
     }
 
     @Test (priority = 6)
@@ -110,13 +110,13 @@ public class Test_Suit extends BaseTest
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
 
-        leaveYourComment.clickOnNewsReleaseDetails();
-        leaveYourComment.waitsUntilPageIsVisible();
-        leaveYourComment.typeCommentTitle();
-        leaveYourComment.typeComment();
-        leaveYourComment.clickOnNewCommentButton();
-        leaveYourComment.verifyThecommentAddedMessage();
-        leaveYourComment.verifyThecommentIsPosted();
+        leaveYourComment.clickOnNewsReleaseDetails();//clicks on second details.
+        leaveYourComment.waitsUntilPageIsVisible();//waits until the page is visible.
+        leaveYourComment.typeCommentTitle();//types comment title.
+        leaveYourComment.typeComment();//types the comments in the box.
+        leaveYourComment.clickOnNewCommentButton();//clicks on the new comment button.
+        leaveYourComment.verifyThecommentAddedMessage();//verifies the added message.
+        leaveYourComment.verifyThecommentIsPosted();//verifies if the message exists in the comments list.
 
     }
 
@@ -126,12 +126,12 @@ public class Test_Suit extends BaseTest
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
 
-        homePage.waitUntilUserisInHomepage();
-        homePage.clickOnSearchBoxAndTypeText();
-        homePage.clickOnSearchButtonInHomepage();
+        homePage.waitUntilUserisInHomepage();//waits until the user is in homepage.
+        homePage.clickOnSearchBoxAndTypeText();//types the brand name.
+        homePage.clickOnSearchButtonInHomepage();//clicks on the search button.
 
-        searchNikePage.verifyUserInNikeBrandPage();
-        searchNikePage.verifyAllItemsContainsNike();
+        searchNikePage.verifyUserInNikeBrandPage();//prints out the listed branded names.
+        searchNikePage.verifyAllItemsContainsNike();//Asserts the brand name matches.
 
     }
 
