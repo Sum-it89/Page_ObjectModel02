@@ -43,12 +43,6 @@ public class Test_Suit extends BaseTest
     public void userIsAbleToOrderMacBookPro(){
 
 
-        homePage.waitUntilRegistrationLinkClickable();//waits until the Registration button is clickable.
-        homePage.clickOnRegisterLink();//clicks on the Register Link.
-        registrationPage.verifyPageURL();//verify Weather the landing page is registration page.
-        registrationPage.userSubmitRegistrationFormSuccessfully();//fills the registration form with personal details and submits.
-        registrationResult.waitsForSubmitButtonToDisappear();//Page waits until the submit button is disappeared.
-        registrationResult.verifiesTheRegisteredMessageIsCorrect();//captures and verifies the registration complete message.
 
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
@@ -81,19 +75,12 @@ public class Test_Suit extends BaseTest
         paymentInformation.fillPaymentMethod();//fills credit card information.
 
         confirmOrder.confirmOrder();//confirms and clicks next.
-        orderComplete.orderCompleteMessage();//prints the complete message and Asserts.
+        orderComplete.orderCompleteMessage();//prints the order complete message.
 
     }
 
     @Test (priority = 4)
     public void userIsAbleToChangeCurrency(){
-
-        homePage.waitUntilRegistrationLinkClickable();//waits until the Registration button is clickable.
-        homePage.clickOnRegisterLink();//clicks on the Register Link.
-        registrationPage.verifyPageURL();//verify Weather the landing page is registration page.
-        registrationPage.userSubmitRegistrationFormSuccessfully();//fills the registration form with personal details and submits.
-        registrationResult.waitsForSubmitButtonToDisappear();//Page waits until the submit button is disappeared.
-        registrationResult.verifiesTheRegisteredMessageIsCorrect();//captures and verifies the registration complete message.
 
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
@@ -109,12 +96,6 @@ public class Test_Suit extends BaseTest
 
     @Test (priority = 5)
     public void userIsAbleToClickAndAcceptAlerts(){
-        homePage.waitUntilRegistrationLinkClickable();//waits until the Registration button is clickable.
-        homePage.clickOnRegisterLink();//clicks on the Register Link.
-        registrationPage.verifyPageURL();//verify Weather the landing page is registration page.
-        registrationPage.userSubmitRegistrationFormSuccessfully();//fills the registration form with personal details and submits.
-        registrationResult.waitsForSubmitButtonToDisappear();//Page waits until the submit button is disappeared.
-        registrationResult.verifiesTheRegisteredMessageIsCorrect();//captures and verifies the registration complete message.
 
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
@@ -125,13 +106,6 @@ public class Test_Suit extends BaseTest
 
     @Test (priority = 6)
     public void userIsAbleToLeaveComment(){
-
-        homePage.waitUntilRegistrationLinkClickable();//waits until the Registration button is clickable.
-        homePage.clickOnRegisterLink();//clicks on the Register Link.
-        registrationPage.verifyPageURL();//verify Weather the landing page is registration page.
-        registrationPage.userSubmitRegistrationFormSuccessfully();//fills the registration form with personal details and submits.
-        registrationResult.waitsForSubmitButtonToDisappear();//Page waits until the submit button is disappeared.
-        registrationResult.verifiesTheRegisteredMessageIsCorrect();//captures and verifies the registration complete message.
 
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
@@ -148,12 +122,6 @@ public class Test_Suit extends BaseTest
 
     @Test (priority = 7)
     public void userIsAbleToSerchAndCheckNikeBrandAndChangeBrand(){
-        homePage.waitUntilRegistrationLinkClickable();//waits until the Registration button is clickable.
-        homePage.clickOnRegisterLink();//clicks on the Register Link.
-        registrationPage.verifyPageURL();//verify Weather the landing page is registration page.
-        registrationPage.userSubmitRegistrationFormSuccessfully();//fills the registration form with personal details and submits.
-        registrationResult.waitsForSubmitButtonToDisappear();//Page waits until the submit button is disappeared.
-        registrationResult.verifiesTheRegisteredMessageIsCorrect();//captures and verifies the registration complete message.
 
         logIn.verifyIfUserisLoggedIn();//Verifies weather user is logged in already or not.
         logIn.userShouldLogInSuccessfully();//clicks on log in button and fills log in information of registered user.
